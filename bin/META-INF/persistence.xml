@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+<persistence-unit name="JPATest">
+
+<class>com.jpa.StudentBean</class>
+<class>com.jpa.EmployeeBean</class>
+<class>com.jpa.OtOStudent</class>
+<class>com.jpa.OtOLibrary</class>
+<class>com.jpa.OtMStudent</class>
+<class>com.jpa.OtMLibrary</class>
+<class>com.jpa.MtMStudent</class>
+<class>com.jpa.MtMCourse</class>
+<class>com.jpa.OtMCourse1</class>
+<class>com.jpa.OtMStudent1</class>
+<class>com.jpa.Tables</class>
+
+<properties>
+<property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/jpadb" />
+<property name="jakarta.persistence.jdbc.user" value="root" />
+<property name="jakarta.persistence.jdbc.password" value="root" />
+<property name="jakarta.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
+<property name="eclipselink.ddl-generation" value="create-tables" />
+</properties>
+</persistence-unit>
+</persistence>
